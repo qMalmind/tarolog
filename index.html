@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Консультация таролога Владлены</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="header-cont">
+            <div>
+                <img src="./media/lion_header.svg" alt="" class="logo" width="47" height="47">
+            </div>
+            <nav class="js-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./articles.html" class="nav-link">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./layouts_daily.html" class="nav-link">Расклады дня</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./advice.html" class="nav-link">Советы таролога</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./astro-partner.html" class="nav-link">Астро-партнёр</a>
+                    </li>
+                </ul>
+
+                <div class="header-mobile-phone">
+                    <a href="tel:+79555555555" class="header-link">
+                        +7 (955) 555 55 55
+                    </a>
+                </div>
+            </nav>
+            <a href="tel:+79555555555" class="header-link header-phone">
+                +7 (955) 555 55 55
+            </a>
+            <div id="nav-icon" class="js-nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="first">
+            <div class="cont first-block">
+                <div class="title-block">
+                    <h1>
+                        Консультация таролога Владлены
+                    </h1>
+                    <p>
+                        Добро пожаловать в мир предсказаний и откровений! <br>
+                        Запишитесь на консультацию опытного таролога и 
+                        откройте завесу своего будущего. 
+                    </p>
+                    <div>
+                        <button class="btn-primary js-modal-btn-open" data-modal="feedback">Записаться</button>
+                    </div>
+                </div>
+                <div class="logo-block">
+                    <div class="main-logo">
+                        <img src="./media/round.svg" alt="знаки зодиака">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="about">
+            <div class="cont second-block">
+                <h2>Обо мне</h2>
+                <div class="image-and-text">
+                    <img src="./media/about_img.png" alt="Владлена">
+                    <p>
+                        Привет! Меня зовут Владлена, и я практикующий таролог с
+                        более чем 5 лет опыта в области эзотерики и гадания на картах
+                        Таро. Моя цель — помочь вам найти ответы на жизненные
+                        вопросы и предоставить ясность в сложных ситуациях. Используя
+                        древние знания и интуицию, я интерпретирую значения карт
+                        Таро, чтобы предложить вам инсайты и руководство. Запишитесь
+                        на консультацию, и вместе мы откроем новые пути к вашим целям
+                        и мечтам.
+                    </p>
+                </div>
+                <div class="info-list-block">
+                    <ul class="info-list">
+                        <li>
+                            <img src="./media/vision.svg" alt="">
+                            <p>
+                                Способность читать карты с
+                                высокой степенью точности и 
+                                интуиции.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./media/improve.svg" alt="">
+                            <p>
+                                Предоставление точных и
+                                полезных консультаций
+                                клиентам, помогая им принимать
+                                важные жизненные решения.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./media/publish.svg" alt="">
+                            <p>
+                                Публикация собственных
+                                исследований и наблюдений о
+                                Таро, делая знания доступными
+                                широкой аудитории.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section class="third" id="catalog">
+            <div class="third-block">
+                <h2>Услуги</h2>
+                <div class="swiper mySwiper">
+                    <ul class="cards swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <h4>Консультации</h4>
+                                
+                                <div class="card-info">
+                                    <span>
+                                        Таролог использует карты Таро
+                                        для предсказаний и ответов на 
+                                        вопросы вашей жизни.
+                                    </span>
+                                    <button 
+                                        data-swiper-slide-index="0"
+                                        data-modal="catalog-1"
+                                        class="js-modal-btn-open js-change-slide-subslider">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <h4>Таро обзор</h4>
+                                <div class="card-info">
+                                    <span>
+                                        Таро разбор анализирует
+                                        текущую ситуацию и пути её
+                                        развития.
+                                    </span>
+                                    <button
+                                        data-swiper-slide-index="1"
+                                        data-modal="catalog-2"
+                                        class="js-modal-btn-open js-change-slide-subslider"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <h4>Нумерология</h4>
+                                <div class="card-info">
+                                    <span>
+                                        Нумерология — это древняя
+                                        система верований,
+                                        основанная на идее, что числа
+                                        имеют особое значение и
+                                        влияют на нашу жизнь.
+                                    </span>
+                                    <button
+                                        data-swiper-slide-index="2"
+                                        data-modal="catalog-3"
+                                        class="js-modal-btn-open js-change-slide-subslider"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sub-slider-default-text js-ssdt">
+                <div>Откройте дверь в мир безграничных возможностей.</div>
+                <span>
+                    Готовы ли вы заглянуть за завесу тайны и раскрыть свой истинный <br>
+                    потенциал? Наши уникальные услуги помогут вам найти ответы на самые <br>
+                    сокровенные вопросы, обрести гармонию и сделать жизнь ярче. <br>
+                </span>
+            </div>
+
+            <div class="swiper sub-slider-swiper sub-slider-swiper-hide js-subslider">
+                <ul class="swiper-wrapper subslider">
+                    <li class="swiper-slide">
+                        <div class="sub-slider-slide-content">
+                            <img src="./media/usluga-consultation.png" alt="">
+                            <span>
+                                Таролог использует карты Таро для ответов на вопросы и предсказания
+                                будущего. Вы можете задавать конкретные вопросы о своей жизни, и
+                                таролог интерпретирует значения карт, предлагая ответы и направление.
+                                Этот процесс помогает получить личные инсайты и руководство.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="sub-slider-slide-content">
+                            <img src="./media/usluga-taro-observe.png" alt="">
+                            <span>
+                                Таро разбор - это аналитический подход, который сосредоточен
+                                на анализе текущей ситуации и возможных путей её развития.
+                                В отличие от консультации, он включает более структурированный
+                                анализ карт, рассматривая их связи и комбинации для глубокого
+                                понимания ситуации. Чаще всего таро разбор используется для
+                                самоанализа и личного роста. 
+                            </span>
+                        </div>
+                    </li>
+                    <li class="swiper-slide"> 
+                        <div class="sub-slider-slide-content">
+                            <img src="./media/usluga-numerologic.png" alt="">
+                            <span>
+                                Нумерология — это древняя система верований, основанная на
+                                идее, что числа имеют особое значение и влияют на нашу жизнь.
+                                Анализируя числа, такие как дата рождения или имя, нумерологи
+                                могут выявить личные черты характера, потенциал и жизненные
+                                пути человека. Это искусство, которое помогает понять
+                                глубинные аспекты личности и судьбы через числа. 
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <img src="media/smoke.png" alt="" class="bg-smoke">
+        </section>
+
+        <section class="fourth" id="blog">
+            <div class="cont fourth-block">
+                <h2>Категории</h2>
+                <ul class="categories-list">
+                    <li class="light-purple">
+                        <a href="./articles.html">
+                            <h4>Статьи</h4>
+                            <p>Статьи для вас. Заходите ознакомиться.</p>
+                        </a>
+                    </li>
+                    <li class="purple">
+                        <a href="#">
+                            <h4>Расклады дня</h4>
+                            <p>Расклады для вас. Заходите ознакомиться.</p>
+                        </a>
+                    </li>
+                    
+                    <li class="green">
+                        <a href="#">
+                            <h4>Советы</h4>
+                            <p>Советы для вас. Заходите ознакомиться.</p>
+                        </a>
+                    </li>
+                    
+                    <li class="light-green">
+                        <a href="#">
+                            <h4>Астро-планер</h4>
+                            <p>Астро-планер для вас. Заходите ознакомиться.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts">
+        <h2>Контакты</h2>
+        <div class="social-media">
+            <a href="#" target="_blank">
+                <img src="./media/telegram.svg" alt="">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="./media/instagramm.svg" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <div class="modal-wrapper wrapper-hide js-wrapper">
+        <div id="feedback" class="js-modal modal modal-hide">
+            <div class="modal-header">
+                <h5>Записаться на приём</h5>
+                <img src="./media/close.svg" class="js-close-modal" data-modal="feedback" tabindex="7"/>
+            </div>
+            <div class="modal-content">
+                <form action="post" id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" name="name" id="name" tabindex="1" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Ваш номер телефона</label>
+                        <input type="tel" name="telephone" id="telephone" tabindex="2" required>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birth-day">Дата рождения</label>
+                        <input type="date" name="birth-day" id="birth-day" tabindex="3" required>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birth-time">Время рождения</label>
+                        <input type="time" name="birth-time" id="birth-time" tabindex="4">
+                        <span class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product">Услуга</label>
+                        <select name="product" id="product" tabindex="5" required>
+                            <option value="consultation">Консультация</option>
+                            <option value="taro-obs">Таро обзор</option>
+                            <option value="numerology">Нумерология</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" tabindex="6" class="btn-primary">Отправить</button>
+                        <a href="#" class="form-politic-сonfidentiality">Нажимая на кнопку вы соглашается с чем-то там</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper modal-wrapper-1300-hide wrapper-hide js-wrapper">
+        <div id="catalog-1" class="js-modal modal catalog-modal modal-hide">
+            <div class="modal-header">
+                <h5>Консультации</h5>
+                <img src="./media/close.svg" class="js-close-modal" data-modal="catalog-1" tabindex="7"/>
+            </div>
+            <div class="modal-content catalog-modal-content">
+                <img src="./media/usluga-consultation.png" alt="">
+                <span>
+                    Таролог использует карты Таро для ответов на вопросы и предсказания
+                    будущего. Вы можете задавать конкретные вопросы о своей жизни, и
+                    таролог интерпретирует значения карт, предлагая ответы и направление.
+                    Этот процесс помогает получить личные инсайты и руководство.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal-wrapper modal-wrapper-1300-hide wrapper-hide js-wrapper">
+        <div id="catalog-2" class="js-modal modal catalog-modal modal-hide">
+            <div class="modal-header">
+                <h5>Таро обзор</h5>
+                <img src="./media/close.svg" class="js-close-modal" data-modal="catalog-2" tabindex="7"/>
+            </div>
+            <div class="modal-content catalog-modal-content">
+                <img src="./media/usluga-taro-observe.png" alt="">
+                <span>
+                    Таро разбор - это аналитический подход, который сосредоточен
+                    на анализе текущей ситуации и возможных путей её развития.
+                    В отличие от консультации, он включает более структурированный
+                    анализ карт, рассматривая их связи и комбинации для глубокого
+                    понимания ситуации. Чаще всего таро разбор используется для
+                    самоанализа и личного роста. 
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal-wrapper modal-wrapper-1300-hide wrapper-hide js-wrapper">
+        <div id="catalog-3" class="js-modal modal catalog-modal modal-hide">
+            <div class="modal-header">
+                <h5>Нумерология</h5>
+                <img src="./media/close.svg" class="js-close-modal" data-modal="catalog-3" tabindex="7"/>
+            </div>
+            <div class="modal-content catalog-modal-content">
+                <img src="./media/usluga-numerologic.png" alt="">
+                <span>
+                    Нумерология — это древняя система верований, основанная на
+                    идее, что числа имеют особое значение и влияют на нашу жизнь.
+                    Анализируя числа, такие как дата рождения или имя, нумерологи
+                    могут выявить личные черты характера, потенциал и жизненные
+                    пути человека. Это искусство, которое помогает понять
+                    глубинные аспекты личности и судьбы через числа. 
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const width = window.innerWidth
+            if (width < 1300){
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "cards",
+                    grabCursor: true,
+                });
+                swiper.slideTo(2);
+            }
+
+            var swiperSubslider = new Swiper(".js-subslider", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+            });
+
+            // Получаем нужный элемент
+            var subSliderNode = document.querySelector('.js-subslider');
+
+            var Visible = function (target, overScrolling = {top: 0, left: 0, right: 0, bottom: 0}) {
+                // Все позиции элемента
+                var targetPosition = {
+                    top: window.pageYOffset + target.getBoundingClientRect().top + overScrolling.top,
+                    left: window.pageXOffset + target.getBoundingClientRect().left + overScrolling.left,
+                    right: window.pageXOffset + target.getBoundingClientRect().right + overScrolling.right,
+                    bottom: window.pageYOffset + target.getBoundingClientRect().bottom + overScrolling.bottom,
+                    },
+                    // Получаем позиции окна
+                    windowPosition = {
+                    top: window.pageYOffset,
+                    left: window.pageXOffset,
+                    right: window.pageXOffset + document.documentElement.clientWidth,
+                    bottom: window.pageYOffset + document.documentElement.clientHeight
+                    };
+
+                if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+                    targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+                    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+                    targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+                    // Если элемент полностью видно, то запускаем следующий код
+                    console.clear();
+                    console.log('Вы видите элемент :)');
+                } else {
+                    target.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+                    console.clear();
+                };
+            };
+
+            var buttons = document.querySelectorAll('.js-change-slide-subslider');
+            buttons.forEach(el => el.addEventListener('click', function() {
+                swiperSubslider.slideTo(el.dataset.swiperSlideIndex);
+                subSliderNode.classList.remove('sub-slider-swiper-hide');
+                document.querySelector('.js-ssdt').classList.add('sub-slider-swiper-hide');
+                Visible(subSliderNode, {top: 50, left: 50, right: 50, bottom: 50});
+            }));
+        })
+    </script>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>
