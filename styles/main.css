@@ -98,6 +98,21 @@
 
 }
 
+.second .image-and-text img{
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.second .image-and-text .about-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.second .image-and-text summary{
+    cursor: pointer;
+}
+
 .second .image-and-text p{
     text-indent: 40px;
     font-size: 20px;
@@ -113,7 +128,7 @@
 
 .info-list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 50px;
 
     background: 
@@ -347,12 +362,21 @@
 }
 
 .sub-slider-default-text{
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 35px;
+}
+
+.sub-slider-default-text div{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.sub-slider-default-text span{
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .sub-slider-swiper{
@@ -385,6 +409,10 @@
     .third .cards li{
         z-index: 0;
         height: 450px !important;
+    }
+
+    .sub-slider-default-text{
+        display: none;
     }
 
     .third .cards li:nth-child(1),
