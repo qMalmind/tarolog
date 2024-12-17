@@ -204,7 +204,12 @@
     }
 
     .info-list{
-        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .info-list li{
+        flex-direction: column;
+        row-gap: 10px;
     }
 
     .info-list li:nth-child(1){
