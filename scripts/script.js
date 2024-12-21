@@ -131,3 +131,66 @@ feedbackForm.addEventListener("submit", async (event) => {
 });
 
 // === /Код формы фидбека/ ===
+
+
+// === Блок услуги ===
+
+document.addEventListener('DOMContentLoaded', () => {
+    const width = window.innerWidth
+    if (width < 1300){
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+        swiper.slideTo(2);
+    }
+
+    var swiperSubslider = new Swiper(".js-subslider", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+
+    // Получаем нужный элемент
+    var subSliderNode = document.querySelector('.js-subslider');
+
+    var Visible = function (target, overScrolling = {top: 0, left: 0, right: 0, bottom: 0}) {
+        // Все позиции элемента
+        var targetPosition = {
+            top: window.pageYOffset + target.getBoundingClientRect().top + overScrolling.top,
+            left: window.pageXOffset + target.getBoundingClientRect().left + overScrolling.left,
+            right: window.pageXOffset + target.getBoundingClientRect().right + overScrolling.right,
+            bottom: window.pageYOffset + target.getBoundingClientRect().bottom + overScrolling.bottom,
+            },
+            // Получаем позиции окна
+            windowPosition = {
+            top: window.pageYOffset,
+            left: window.pageXOffset,
+            right: window.pageXOffset + document.documentElement.clientWidth,
+            bottom: window.pageYOffset + document.documentElement.clientHeight
+            };
+
+        if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+            targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+            targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+            targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+            // Если элемент полностью видно, то запускаем следующий код
+            console.clear();
+            console.log('Вы видите элемент :)');
+        } else {
+            target.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+            console.clear();
+        };
+    };
+
+    var buttons = document.querySelectorAll('.js-change-slide-subslider');
+    buttons.forEach(el => el.addEventListener('click', function() {
+        swiperSubslider.slideTo(el.dataset.swiperSlideIndex);
+        subSliderNode.classList.remove('sub-slider-swiper-hide');
+        document.querySelector('.js-ssdt').classList.add('sub-slider-swiper-hide');
+        Visible(subSliderNode, {top: 50, left: 50, right: 50, bottom: 50});
+    }));
+})
+
+// === /Блок услуги/ ===
