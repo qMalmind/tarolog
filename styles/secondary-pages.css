@@ -165,6 +165,105 @@ section{
     z-index: -1;
 }
 
+.accordions{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.accordion{
+    /* min-height: 500px; */
+    background:
+        url("../media/accordion_bg.png"),
+        linear-gradient(
+            180deg, rgba(125, 43, 137, 0.32) 0%,
+            rgba(125, 43, 137, 0.32)  100%
+        );
+    background-position: center bottom;
+    background-size: cover;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+.accordion summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+
+    background-color: #A365AC;
+    border-radius: 1rem;
+
+    padding: 15px 25px;
+}
+
+.accordion summary h4{
+    color: #fff;
+}
+
+.accordion summary .toggle-icon{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(-90deg);
+}
+
+.accordion details[open] summary .toggle-icon{
+    transform: rotate(90deg);
+}
+
+.accordion summary .toggle-icon img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.accordion summary::marker{
+    content: none;
+    display: none;
+}
+
+.accordion p{
+    color: #fff;
+    padding: 20px;
+    min-height: 450px;
+}
+
+.pagination{
+    display: flex;
+    gap: 15px;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li{
+    list-style-type: none;
+    border: 2px solid #A365AC;
+}
+
+.pagination .pagination-link{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination .active .pagination-link{
+    color: #fff;
+    background-color: #A365AC;
+}
+
 @media (max-width: 1110px) {
     .cards-list{
         grid-template-columns: 1fr;
@@ -173,6 +272,12 @@ section{
 
     .card{
         width: 530px;
+    }
+}
+
+@media (max-width: 768px) { /* Примерная ширина, можно изменить */
+    .pagination li:not(:first-child):not(:nth-child(2)):not(:nth-last-child(2)):not(:last-child):not(.active) {
+        display: none;
     }
 }
 
