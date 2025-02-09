@@ -183,6 +183,8 @@ section{
     background-size: cover;
     border-radius: 1rem;
 
+    padding: 15px;
+
     cursor: pointer;
 }
 
@@ -200,6 +202,15 @@ section{
 
 .accordion summary h4{
     color: #fff;
+}
+
+.accordion h5{
+    color: #fff;
+    padding: 15px 25px;
+}
+
+.accordion details h5{
+    display: none;
 }
 
 .accordion summary .toggle-icon{

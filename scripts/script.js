@@ -214,8 +214,15 @@ if(accordions){
                 groupAccordions.forEach(el => {
                     if(accordion !== el){
                         el.querySelector('details').open = false;
+                        accordion.querySelector('.js-accordion-title-outer').style.display = 'block';
+                        accordion.querySelector('.js-accordion-title-inner').style.display = 'none';
                     }
                 });
+                accordion.querySelector('.js-accordion-title-outer').style.display = 'none';
+                accordion.querySelector('.js-accordion-title-inner').style.display = 'block';
+            }else{
+                accordion.querySelector('.js-accordion-title-outer').style.display = 'block';
+                accordion.querySelector('.js-accordion-title-inner').style.display = 'none';
             }
         });
     });
