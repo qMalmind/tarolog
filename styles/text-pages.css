@@ -1,0 +1,128 @@
+@import url('./font.css');
+
+h1{
+    color: #0C4E57;
+    font-weight: bold;
+    text-align: center;
+
+    margin-top: 70px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 105px;
+
+    margin-top: 65px;
+}
+
+.title-block{
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px 110px;
+
+    border-radius: 30px;
+}
+
+.nav-menu-block{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-menu-block a{
+    flex: 1;
+    padding: 15px;
+
+    background-color: #fff;
+    border-radius: 30px;
+
+    text-align: center;
+    color: #0C4E57; 
+    text-decoration: none;
+}  
+
+.tb-monday{
+    background-image: url('../media/text-page-weeks/article-monday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb-tuesday{
+    background-image: url('../media/text-page-weeks/article-tuesday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb-wensday{
+    background-image: url('../media/text-page-weeks/article-wensday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb-thursday{
+    background-image: url('../media/text-page-weeks/article-thursday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb-friday{
+    background-image: url('../media/text-page-weeks/article-friday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb-saturday{
+    background-image: url('../media/text-page-weeks/article-saturday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb-sunday{
+    background-image: url('../media/text-page-weeks/article-sunday.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content .text{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #0C4E57;
+}
+
+@media (max-width: 768px) {
+    .title-block{
+        padding: 25px;
+        height: 400px;
+    }
+    
+    .main-content .text{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 465px) {
+    .title-block{
+        height: 300px;
+        padding: 15px;
+    }
+
+    
+    .main-content .text{
+        width: 100%;
+    }
+}
