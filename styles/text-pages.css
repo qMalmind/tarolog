@@ -103,6 +103,18 @@ h1{
     font-size: 18px;
     color: #0C4E57;
 }
+.second-content{
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.second-content .text{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #0C4E57;
+}
 
 @media (max-width: 768px) {
     .title-block{
@@ -127,3 +139,757 @@ h1{
         width: 100%;
     }
 }
+/*накинем радости в этот фаил mondey*/
+.custom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 65px;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.background-image1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.text-block1 {
+    position: absolute;
+    width: 1039px;
+    height: 233px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(30px);
+
+    font-family: "Novelist", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(12, 78, 87);
+    text-align: center;
+}
+
+/* Левый блок */
+.text-block1.left {
+    left: 0;
+    top: 10%;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 7px 14px 11.5px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8) 100%);
+}
+
+/* Правый блок */
+.text-block1.right {
+    right: 0;
+    bottom: 10%;
+    border-radius: 30px 0 0 30px;
+    box-shadow: -7px -14px 11.5px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7) 100%);
+}
+
+.custom-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 840px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text-block2 {
+    position: absolute;
+    width: 638px;
+    max-width: 90%;
+    height: auto;
+    left: 730px;
+    top: 2790px;
+    transform: translateY(-2584px); /* Поднимаем текст относительно секции */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*накинем радости в этот фаил mondey*/
+/*саня гей не мог сделать нормально для текста блок стиля чтоб я его везде юзал плакай и фикси */
+.mega-text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 65px;
+}
+
+.mega-text-container {
+    width: 1076px;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: rgb(12, 78, 87);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: justify;
+
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+/* --- АДАПТИВНОСТЬ --- */
+@media (max-width: 1200px) {
+    .text-block1 {
+        width: 80%;
+        height: auto;
+        font-size: 28px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-block1 {
+        width: 75%;
+        font-size: 24px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block3{
+        font-size: 23px !important;
+    }
+    .mega-text-section{
+        padding: 15px;
+    }
+    .text-block1 {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .text-block1.left,
+    .text-block1.right {
+        left: 5px;
+        right: 5px;
+        transform: none;
+    }
+
+    .text-block1.left {
+        top: 5%;
+        border-radius: 10px;
+    }
+
+    .text-block1.right {
+        bottom: 5%;
+        border-radius: 10px;
+    }
+
+    .background-image1{
+        height: 350px;
+    }
+
+    .container2{
+        height: 500px;
+    }
+
+    .second-content .text{
+        width: 100%;
+    }
+}
+
+/*кайфанем от  фаила 2дай*/
+.custom-section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 840px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text-block3 {
+    position: absolute;
+    width: 1170px;
+    max-width: 90%;
+    height: auto;
+    left: 131px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "Novelist", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sad-men-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sad-men {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 840px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-image4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text-block-up{
+    position: absolute;
+    width: 1170px;
+    max-width: 90%;
+    height: auto;
+    left: 131px;
+    top: 50px; 
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "Novelist", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.row4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 80px;
+}
+
+.text4 {
+    width: 528px;
+    color: rgb(12, 78, 87);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.image4 {
+    width: 418px;
+    height: 453px;
+    object-fit: cover;
+}
+
+.sad-men2 {
+    position: relative;
+    width: 100%;
+    max-width: 1067px;
+    height: 659px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*flecs in  crenk-crenk-daaa*/
+
+/*4werg nice*/
+.sad-men2 {
+    position: relative;
+    width: 100%;
+    max-width: 1067px;
+    height: 659px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-tu {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 952px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block-tu {
+    position: absolute;
+    width: 620px; /* Задаем ширину, как на картинке */
+    max-width: 90%;
+    height: auto;
+    left: 182px; /* Отступ слева */
+    top: 237px; /* Поднимаем текст вверх */
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "Novelist", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.happy-gys
+{
+    position: relative;
+    width: 100%;
+    max-width: 1067px;
+    height: 784px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-block-s {
+    position: absolute;
+    width: 620px;
+    max-width: 90%;
+    height: auto;
+    right: 182px; 
+    top: 237px; 
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "Novelist", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.happy-gys1
+{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 905px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 285px;
+}
+
+.container5 {
+    position: relative;
+    width: 100%;
+    max-width: 1267px;
+}
+
+.rectangle5 {
+    position: relative;
+    width: 1267px;
+    height: 285px;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 7px 14px 11.5px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(60.3px);
+    background: linear-gradient(90deg, rgba(120, 81, 7, 0.69), rgba(36, 179, 174, 0.75) 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 130px;
+}
+
+.text5 {
+    color: rgb(255, 255, 255);
+    font-family: "Novelist", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    max-width: 1077px;
+}
+
+@media (max-width: 480px) {
+    .text-block1 {
+        font-size: 18px;
+        padding: 8px;
+        width: 95%;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .text-block2 {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-2584px);
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block2 {
+        width: 85%;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 15px;
+        top: 2700px;
+        transform: translateX(-50%) translateY(-2584px);
+    }
+
+    .sad-men{
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-block2 {
+        width: 90%;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 10px;
+    }
+}
+
+/* --- АДАПТИВНОСТЬ --- */
+@media (max-width: 1200px) {
+    .mega-text-container {
+        width: 85%;
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mega-text-container {
+        width: 90%;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mega-text-container {
+        width: 95%;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mega-text-container {
+        width: 98%;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 20px;
+    }
+}
+
+
+/* --- АДАПТИВНОСТЬ --- */
+@media (max-width: 1200px) {
+    .text-block3 {
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-block3 {
+        width: 90%;
+        font-size: 28px;
+        line-height: 42px;
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block3 {
+        width: 95%;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 15px;
+        bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-block3 {
+        width: 98%;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-block3 {
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+@media (max-width: 992px) {
+    .text-block-up {
+        width: 90%;
+        font-size: 28px;
+        line-height: 42px;
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block-up {
+        width: 95%;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 15px;
+        bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-block-up {
+        left: 30px;
+        width: 98%;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .row4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .text4 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .image4 {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* --- АДАПТИВНОСТЬ --- */
+@media (max-width: 1200px) {
+    .text-block-tu {
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        line-height: 45px;
+        top: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-block-tu {
+        width: 90%;
+        font-size: 28px;
+        line-height: 42px;
+        top: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block-tu {
+        width: 95%;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 15px;
+        text-align: center;
+        top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-block-tu {
+        width: 98%;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-block-s {
+        width: 85%;
+        right: 50%;
+        transform: translateX(50%);
+        font-size: 30px;
+        line-height: 45px;
+        top: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-block-s {
+        width: 90%;
+        font-size: 28px;
+        line-height: 42px;
+        top: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block-s {
+        width: 95%;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 15px;
+        text-align: center; /* Выравнивание по центру для мобильных */
+        top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-block-s {
+        width: 98%;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .rectangle5 {
+        width: 90%;
+        padding-left: 50px;
+    }
+
+    .text5 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rectangle5 {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+        border-radius: 0px 20px 20px 0px;
+        justify-content: center;
+    }
+
+    .text5 {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .rectangle5 {
+        width: 98%;
+        padding: 15px;
+    }
+
+    .text5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/*воскресенье время отдохнуть*/
